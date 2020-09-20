@@ -14,7 +14,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainImprimir extends AppCompatActivity implements View.OnClickListener {
-
     // Declaración
     TextView tvAlumnoR, tvEscuelaR, tvCarreraR, tvGastosAdicionalesR, tvMontoGastosR, tvNumeroCuotasR, tvCostoCarreraR, tvPensionR, tvGastoAdicionalR, tvTotalPagarR;
     Button btnVolver;
@@ -23,8 +22,7 @@ public class MainImprimir extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imprimir);
-
-        // Referenciar
+        // Referencias
         tvAlumnoR = (TextView) findViewById(R.id.tvAlumnoR);
         tvEscuelaR = (TextView) findViewById(R.id.tvEscuelaR);
         tvCarreraR = (TextView) findViewById(R.id.tvCarreraR);
@@ -35,16 +33,12 @@ public class MainImprimir extends AppCompatActivity implements View.OnClickListe
         tvPensionR = (TextView) findViewById(R.id.tvPensionR);
         tvGastoAdicionalR = (TextView) findViewById(R.id.tvGastoAdicionalR);
         tvTotalPagarR = (TextView) findViewById(R.id.tvTotalPagarR);
-
         btnVolver = (Button) findViewById(R.id.btnVolver);
         btnVolver.setOnClickListener(this);
-
         mostrarDatos();
-
     }
 
     void mostrarDatos() {
-
         // Obtener el Intent
         Bundle datos = this.getIntent().getExtras();
 
@@ -67,5 +61,4 @@ public class MainImprimir extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
-
 }
