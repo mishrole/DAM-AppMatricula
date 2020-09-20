@@ -174,23 +174,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 calcularTotal();
             }
         }else {
-            // btnImprimir
-            String nomAlumno = edtAlumno.getText().toString();
-            // Crear objeto de la lase Intent
-            Intent intent = new Intent(this, MainImprimir.class);
-            // Crear claves dentro del objeto Intent
-            intent.putExtra("alumno", nomAlumno);
-            intent.putExtra("escuela", nomEscuela);
-            intent.putExtra("carrera", nomCarrera);
-            intent.putExtra("adicionales", nomAdicional);
-            intent.putExtra("numeroAdicionales", numeroAdicionales);
-            intent.putExtra("cuotas", numeroCuota);
-            intent.putExtra("costoCarrera", costoCarrera);
-            intent.putExtra("pension", costoPension);
-            intent.putExtra("costoAdicional", costoAdicional);
-            intent.putExtra("totalPagar", totalPagar);
-            // Direccionar a la actividad MainImprimir;
-            startActivity(intent);
+            if(spnEscuela.getSelectedItemPosition() == 0) {
+                Toast.makeText(MainActivity.this, "Seleccione una Escuela", Toast.LENGTH_SHORT).show();
+            }else {
+                // btnImprimir
+                String nomAlumno = edtAlumno.getText().toString();
+                // Crear objeto de la lase Intent
+                Intent intent = new Intent(this, MainImprimir.class);
+                // Crear claves dentro del objeto Intent
+                intent.putExtra("alumno", nomAlumno);
+                intent.putExtra("escuela", nomEscuela);
+                intent.putExtra("carrera", nomCarrera);
+                intent.putExtra("adicionales", nomAdicional);
+                intent.putExtra("numeroAdicionales", numeroAdicionales);
+                intent.putExtra("cuotas", numeroCuota);
+                intent.putExtra("costoCarrera", costoCarrera);
+                intent.putExtra("pension", costoPension);
+                intent.putExtra("costoAdicional", costoAdicional);
+                intent.putExtra("totalPagar", totalPagar);
+                // Direccionar a la actividad MainImprimir;
+                startActivity(intent);
+            }
         }
     }
 
