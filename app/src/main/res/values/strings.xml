@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AppMatricula</string>
+
+    <string-array name="escuela">
+        <item>Ninguna</item>
+        <item>Tecnologías de la Información</item>
+        <item>Gestión y Negocios</item>
+    </string-array>
+
+    <string-array name="carreras_ti">
+        <item>Computación e informática</item>
+        <item>Administración de redes y comunicaciones</item>
+        <item>Administración y sistemas</item>
+        <item>Industrial y sistemas</item>
+    </string-array>
+
+    <string-array name="carreras_gn">
+        <item>Administración de empresas</item>
+        <item>Contabilidad</item>
+        <item>Marketing</item>
+        <item>Administración de negocios internacionales</item>
+        <item>Administración de negocios bancarios y financieros</item>
+        <item>Gestión de recursos humanos</item>
+        <item>Gestión de logística (nueva)</item>
+        <item>Administración de operaciones turísticas</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESUMEN MATRÍCULA"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAlumnoR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALUMNO:" />
+
+        <TextView
+            android:id="@+id/tvEscuelaR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESCUELA:" />
+
+        <TextView
+            android:id="@+id/tvCarreraR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CARRERA:" />
+
+        <TextView
+            android:id="@+id/tvGastosAdicionalesR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GASTOS ADICIONALES:" />
+
+        <TextView
+            android:id="@+id/tvMontoGastosR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MONTO GASTOS ADICIONALES:" />
+
+        <TextView
+            android:id="@+id/tvNumeroCuotasR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NÚMERO CUOTAS:" />
+
+        <TextView
+            android:id="@+id/tvCostoCarreraR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COSTO CARRERA:" />
+
+        <TextView
+            android:id="@+id/tvPensionR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENSIÓN:" />
+
+        <TextView
+            android:id="@+id/tvGastoAdicionalR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GASTOS ADICIONALES:" />
+
+        <TextView
+            android:id="@+id/tvTotalPagarR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL PAGAR:" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOLVER" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
