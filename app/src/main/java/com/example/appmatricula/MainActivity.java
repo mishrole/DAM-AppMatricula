@@ -178,6 +178,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, "Seleccione una Escuela", Toast.LENGTH_SHORT).show();
             }else {
                 // btnImprimir
+
+                // En caso quiera imprimir sin calcular
+                calcularAdicionales();
+
                 String nomAlumno = edtAlumno.getText().toString();
                 // Crear objeto de la lase Intent
                 Intent intent = new Intent(this, MainImprimir.class);
